@@ -1,0 +1,2 @@
+FLASK_RUN_PORT=8383
+FLASK_APP=service:app

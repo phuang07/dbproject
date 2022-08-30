@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Get a quote for runner!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/css/cerulean_bootstrap.min.css">
+
+<style>
+#runner-info {
+  background-color: lightgray;
+  margin-bottom: 20px;
+}
+
+#runner-quote {
+  background-color: lightgreen;
+  margin-bottom: 20px;
+}
+</style>
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-header">
+          <h1>Get your runner quote today!</h1>
+      </div>
+
+
+      <!-- FORM -->
+      <div class="col-md-12" id="form_data">
+
+          <div class="form-horizontal">
+
+            <!-- AGE -->
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="age">Age:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="age" placeholder="Enter age">
+              </div>
+            </div>
+
+            <!-- GENDER -->
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="gender">Gender:</label>
+              <div class="col-sm-10">
+                <select class="form-control" id="gender">
+                  <option value="m" selected>Male</option>
+                  <option value="f">Female</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- 1st Race record -->
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="race_distance">Race Distance:</label>
+              <div class="col-sm-10">
+                <select class="form-control" id="race_distance">
+                  <option value="5000" selected>5K</option>
+                  <option value="10000">10K</option>
+                  <option value="21097">Half Marathon</option>
+                  <option value="42195">Marathon</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="race_time">Race Time:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="race_time" placeholder="Enter race time in hh:mm:ss">
+              </div>
+            </div>
+
+            <!-- SUBMIT BUTTONS -->
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-primary" id="submit-btn">Submit for a quote</button>
+              </div>
+            </div>
+      </div> <!-- end Form -->
+
+      <div id="results">
+      <!-- Information user entered -->
+      <div class="col-md-12" id="runner-info"></div>
+      
+      <div class="col-md-12" id="runner-quote"></div>      
+
+      </div>
+
+    </div> <!-- container -->
+    <footer>
+      <br><br><br><br><br><br><br><br><br><br>
+      <p>&copy;  Insurance for Runners 2022</p>
+    </footer>
+  <script type="text/javascript" src = "static/js/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src = "static/js/bootstrap.min.js"></script>
+
+  <!-- YOUR REST API -->
+  <script type="text/javascript" src="static/js/rest_api.js"></script>
+
+  </body>
+</html>
