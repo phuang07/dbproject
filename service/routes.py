@@ -3,8 +3,7 @@ import logging
 from flask import jsonify, request, json, url_for, make_response, abort
 from . import app
 import pandas as pd
-from service.models import Pet
-from .utils import status  # HTTP Status Codes
+dfrom .utils import status  # HTTP Status Codes
 from .utils import error_handlers
 # import sklearn
 import joblib
